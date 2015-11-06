@@ -1,0 +1,13 @@
+
+if __name__ == "__main__":
+	#asociamos las clases 
+	layer_3 = Presentation() # User interface 
+	layer_2 = Logic()
+	layer_1 = Data() 		 
+
+	#Conectamos las clases
+	layer_3.setLower_layer(layer_2)
+	layer_2.setLower_layer(layer_1)
+
+	#Enviamos un parametro
+	layer_3.service_3("Parameter example")

@@ -7,11 +7,13 @@ class Parser:
 	def __init__(self):
 		self.name = "Parser"
 
+#Esta clase actua como Facade
 class Compiler:
 	def __init__(self):
 		self.name = "Compiler"
 		self.scanner = Scanner()
 		self.parser = Parser()
+
 	def compile(self):
 		print("Compiling...")
 		print("Scanning %s"  % self.scanner.name)

@@ -10,5 +10,8 @@
 	padding-top: 15%;
 	padding-bottom: 18%;
 	box-sizing: border-box; /*como queremos que se comporte el tamaño de nuestro contenedor*/
+}
+
+.full-height{
 	height: 100%;
 }

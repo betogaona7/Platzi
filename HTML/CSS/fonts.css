@@ -2,18 +2,35 @@
 
 h1{
 	font-size: 60px;
-	text-transform: :uppercase;
+	text-transform: uppercase;
 	font-weight: 700;
+}
+
+h2{
+	font-size: 48px;
+	text-transform: uppercase;
+	font-weight: 700;
+	margin-bottom: 30px;
+}
+
+p {
+	color: #636363;
 }
 
 a {
 	text-decoration: none;
 }
 
-ol{
-	list-style: decimal;
+ol li{
+	counter-increment: step-counter;
 }
 
-li{
-
+ol li::before{ /*Pseudoselector, crea un elemento nuevo antes de que css dibuje*/
+	content:counter(step-counter);
+	display: inline;
 }
+
+/* Unidades de medida */
+/* em - espacio que obtine su nombre de la letra M, hoy en dia vale 16px */
+/* vh - viewport high 60 partes del 100% de lo que mide el viewport */
+/* vw - viewport wide son 60 unidades de 100 que utiliza el viewport a lo largo para mostrarse */
